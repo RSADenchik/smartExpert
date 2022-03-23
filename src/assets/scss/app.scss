@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import "settings/variables";
+@import "settings/globals";
+
+#app {
+  padding: 52px 100px;
+  font-family: Rubik, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $textColor;
+  @media(max-width: 767px) {
+    padding: 30px;
+  }
+}
+
+nav a {
+  font-weight: bold;
+  color: $darkGray;
+  padding: 0 15px;
+  &:first-child {
+    padding-left: 0;
+  }
+  &.router-link-exact-active {
+    color: $blue;
+  }
+}
+
+@import "partials/select";
+@import "partials/tooltip";
+
+

@@ -1,0 +1,46 @@
+.custom-select {
+  width: 100%;
+  max-width: 265px;
+  cursor: pointer;
+  .custom-select__selected {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px 10px 10px;
+    border: 1px solid $darkGray;
+    box-sizing: border-box;
+    border-radius: 2px;
+    user-select: none;
+    .chevron::before {
+      color: $darkGray;
+      border-style: solid;
+      border-width: 0.2em 0.2em 0 0;
+      content: '';
+      display: inline-block;
+      height: 0.5em;
+      left: 0.25em;
+      position: relative;
+      top: 0.25em;
+      transform: rotate(-45deg);
+      vertical-align: top;
+      width: 0.5em;
+      transition: transform .25s;
+    }
+    .chevron.bottom:before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+  }
+  ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .5s ease;
+    box-shadow: 0 6px 15px rgba(0, 44, 92, 0.1);
+    li {
+      padding: 5px 10px 9px;
+      user-select: none;
+      &:hover {
+        background: $selectHover;
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+main {
+  padding: 32px 42px;
+  @media(max-width: 767px) {
+    padding: 0;
+  }
+}
+h4 {
+  margin: 0 0 15px;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  padding-bottom: 60px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
