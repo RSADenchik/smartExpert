@@ -21,7 +21,9 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory('/smartExpert/'),
-  routes
+  routes: [
+      '/select', '/tooltip'
+  ]
 })
 
 export default router
