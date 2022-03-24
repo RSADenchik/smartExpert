@@ -22,6 +22,7 @@ export default {
     created() {
         window.addEventListener("resize", this.resize);
         window.addEventListener('click', this.autoHideTooltip);
+        window.addEventListener('touchstart', this.autoHideTooltip);
     },
     methods: {
         showTooltip(target, item) {
