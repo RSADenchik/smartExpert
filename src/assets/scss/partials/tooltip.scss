@@ -14,8 +14,8 @@
     &:last-child {
       margin: 0;
     }
-    &:hover {
-      .tooltip {
+    &:hover, &:focus {
+      .tooltip.active {
         visibility: visible;
         opacity: 1;
       }
